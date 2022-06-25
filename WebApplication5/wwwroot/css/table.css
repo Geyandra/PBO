@@ -1,0 +1,41 @@
+:root{
+    /* --color1: #7E57C2;
+    --color2: #F4EEFF; */
+    --color-edit: #0094FF;
+    --color-red: #FF0000;
+    --border-radius: 20px;
+    --box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;    
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.edit{
+    background-color: var(--color-edit);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 30px; */
+    height: 30px;
+    margin-right: 7px;
+    padding: 0 7px 0 7px;
+}
+
+.hapus{
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
