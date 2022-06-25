@@ -1,0 +1,40 @@
+﻿@model Pasien
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Pasien Baru</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Nama"></label>
+            <input asp-for="Nama" class="form-control"></input>
+            <span asp-validation-for="Nama" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="NIK"></label>
+            <input asp-for="NIK" class="form-control"></input>
+            <span asp-validation-for="NIK" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Jenis_Kelamin"></label>
+            <input asp-for="Jenis_Kelamin" class="form-control"></input>
+            <span asp-validation-for="Jenis_Kelamin" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Umur"></label>
+            <input asp-for="Umur" class="form-control"></input>
+            <span asp-validation-for="Umur" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Poli"></label>
+            <input asp-for="Poli" class="form-control"></input>
+            <span asp-validation-for="Poli" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Tambah</button>
+        <a asp-controller="Pasien" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Kembali
+        </a>
+    </div>
+</form>

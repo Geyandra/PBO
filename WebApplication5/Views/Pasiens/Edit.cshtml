@@ -1,0 +1,76 @@
+﻿@model WebApplication5.Models.Pasien
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pasien</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nama" class="control-label"></label>
+                <input asp-for="Nama" class="form-control" />
+                <span asp-validation-for="Nama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NIK" class="control-label"></label>
+                <input asp-for="NIK" class="form-control" />
+                <span asp-validation-for="NIK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jenis_Kelamin" class="control-label"></label>
+                <input asp-for="Jenis_Kelamin" class="form-control" />
+                <span asp-validation-for="Jenis_Kelamin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Umur" class="control-label"></label>
+                <input asp-for="Umur" class="form-control" />
+                <span asp-validation-for="Umur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TTL" class="control-label"></label>
+                <input asp-for="TTL" class="form-control" />
+                <span asp-validation-for="TTL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alamat" class="control-label"></label>
+                <input asp-for="Alamat" class="form-control" />
+                <span asp-validation-for="Alamat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nomor_Telepon" class="control-label"></label>
+                <input asp-for="Nomor_Telepon" class="form-control" />
+                <span asp-validation-for="Nomor_Telepon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pekerjaan" class="control-label"></label>
+                <input asp-for="Pekerjaan" class="form-control" />
+                <span asp-validation-for="Pekerjaan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Poli" class="control-label"></label>
+                <input asp-for="Poli" class="form-control" />
+                <span asp-validation-for="Poli" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Keluhan" class="control-label"></label>
+                <input asp-for="Keluhan" class="form-control" />
+                <span asp-validation-for="Keluhan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

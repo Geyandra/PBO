@@ -1,0 +1,36 @@
+﻿@model Pasien
+
+<form method="post" asp-action="Delete">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Hapus Data Pasien</h2>
+            <hr />
+        </div>
+@*        <div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="Nama"></label>
+            <input asp-for="Nama" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="NIK"></label>
+            <input asp-for="NIK" disabled class="form-control"></input> 
+        </div>
+        <div class="mb-3">
+            <label asp-for="Jenis_Kelamin"></label>
+            <input asp-for="Jenis_Kelamin" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Umur"></label>
+            <input asp-for="Umur" disabled class="form-control"></input>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Poli"></label>
+            <input asp-for="Poli" disabled class="form-control"></input>
+        </div>
+        <button type="submit" class="btn btn-danger" style="width:150px">Hapus</button>
+        <a asp-controller="Pasien" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Kembali
+        </a>
+    </div>
+</form>
